@@ -129,6 +129,40 @@ a{text-decoration:none;color:inherit;}
 @media(max-width:600px){.ind-grid{grid-template-columns:repeat(2,1fr);}.ods-grid{grid-template-columns:repeat(3,1fr);}.op-grid{grid-template-columns:1fr 1fr;}.banner-title{font-size:20px;}.snav a{font-size:10px;padding:0 6px;}.bc-lbl{width:110px;font-size:10px;}}
 @media(max-width:400px){.ods-grid{grid-template-columns:repeat(2,1fr);}.banner-ods-grid{grid-template-columns:repeat(3,1fr);}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}
+
+/* ─── RODAPÉ CEUS (mesmo CSS do index.html) ─── */
+.ft{background:var(--azul);margin-top:18px;padding:20px 18px 12px;}
+.fti{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:28px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.1);}
+.fph{color:#fff;font-weight:900;font-size:16px;letter-spacing:.5px;}
+.fps{color:rgba(255,255,255,.42);font-size:9.5px;line-height:1.5;margin-top:3px;}
+.ftbot{max-width:1280px;margin:10px auto 0;display:flex;justify-content:space-between;align-items:center;}
+.fcp{font-size:9.5px;color:rgba(255,255,255,.3);}
+@media (max-width: 768px){
+  .ft{margin-top:12px;padding:16px 12px 10px;}
+}
+/* ─── NOVO RODAPÉ CEUS ─── */
+.ft-col-left{min-width:0;}
+.ft-col-mid{min-width:0;}
+.ft-col-right{min-width:0;}
+.ft-obs-title{color:#fff;font-size:11.5px;font-weight:800;margin-bottom:4px;letter-spacing:.3px;}
+.ft-obs-desc{color:rgba(255,255,255,.52);font-size:10px;line-height:1.6;margin-bottom:10px;}
+.ft-ods-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.ft-ods-logo{height:36px;width:auto;border-radius:4px;display:block;flex-shrink:0;}
+.ft-contact-title{color:#fff;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px;}
+.ft-contact-body{font-size:10.5px;color:rgba(255,255,255,.58);line-height:1.85;}
+@media(max-width:900px){
+  .fti{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:28px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.1);}
+  .ft-col-left{grid-column:1;grid-row:1;}
+  .ft-col-mid{grid-column:1/3;grid-row:2;}
+  .ft-col-right{grid-column:2;grid-row:1;}
+}
+@media(max-width:600px){
+  .fti{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:28px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.1);}
+  .ft-col-right{grid-column:1;grid-row:3;}
+  .ft-ods-row{justify-content:center;}
+  .ft-ods-logo{height:26px;}
+  .ftbot{text-align:center;}
+}
 </style>
 </head>
 <body>
